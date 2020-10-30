@@ -1,5 +1,4 @@
-# Create your Game class logic in here.
-from phrase import Phrase
+from phrasehunter.phrase import Phrase
 import random
 
 
@@ -7,11 +6,11 @@ class Game:
     def __init__(self):
         self.missed = 0
         self.phrases = [
-            Phrase("A little knowledge is a dangerous thing"),
-            Phrase("A penny for your thoughts"),
-            Phrase("Take with a grain of salt"),
-            Phrase("The opera ain't over till the fat lady sings"),
-            Phrase("Hit the ground running"),
+            Phrase("Bazinga"),
+            Phrase("Legendary"),
+            Phrase("How you doin"),
+            Phrase("Wubba Lubba Dub Dub"),
+            Phrase("Ill be back"),
         ]
         self.active_phrase = self.get_random_phrase()
         self.guesses = [" "]
